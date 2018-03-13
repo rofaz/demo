@@ -412,3 +412,147 @@ template {
  */
 [hidden] {
   display: none; }
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  color: #464646; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 9999;
+  height: 5em; }
+  header .nav .nav--logo {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+    header .nav .nav--logo a {
+      text-transform: uppercase;
+      font-size: 1.8em;
+      font-weight: 600;
+      letter-spacing: 1px; }
+  header .nav .nav--menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header .nav .nav--menu ul li a {
+      padding: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      -webkit-transition: color ease-out 250ms;
+      -o-transition: color ease-out 250ms;
+      transition: color ease-out 250ms; }
+      header .nav .nav--menu ul li a:hover {
+        color: #cccccc; }
+
+button {
+  color: #464646;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: .5em 0;
+  margin: 0 1.5em;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom ease-in-out 500ms;
+  -o-transition: border-bottom ease-in-out 500ms;
+  transition: border-bottom ease-in-out 500ms;
+  cursor: pointer; }
+  button:first-of-type {
+    margin-left: 0; }
+  button.active {
+    border-bottom: 2px solid #464646; }
+  button:hover, button:focus {
+    border-bottom: 2px solid #464646; }
+
+.info {
+  background: transparent url("../../img/bg3.jpg") repeat scroll right center/cover; }
+  .info .info--text {
+    padding: 7em 0;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #cccccc;
+    font-weight: 600;
+    z-index: 9; }
+    .info .info--text span {
+      display: block;
+      font-size: .7em;
+      text-transform: none;
+      letter-spacing: 1px;
+      font-weight: 200; }
+
+.portfolio {
+  padding: 5em 0; }
+  .portfolio .portfolio--menu {
+    margin-bottom: 2.5em; }
+  .portfolio .portfolio--items {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2em;
+    justify-items: center;
+    margin-bottom: 3em; }
+    .portfolio .portfolio--items .portfolio--items--item {
+      cursor: pointer;
+      -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      -webkit-transition: -webkit-box-shadow ease-out 400ms;
+      transition: -webkit-box-shadow ease-out 400ms;
+      -o-transition: box-shadow ease-out 400ms;
+      transition: box-shadow ease-out 400ms;
+      transition: box-shadow ease-out 400ms, -webkit-box-shadow ease-out 400ms; }
+      .portfolio .portfolio--items .portfolio--items--item .title {
+        letter-spacing: 2px;
+        font-size: 1.3em;
+        padding: .5em 1em 1em 1em;
+        text-transform: uppercase; }
+        .portfolio .portfolio--items .portfolio--items--item .title span {
+          display: block;
+          text-transform: none;
+          font-size: .9em;
+          letter-spacing: 1px; }
+      .portfolio .portfolio--items .portfolio--items--item:hover {
+        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
+  .portfolio .portfolio--view-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .portfolio .portfolio--view-more a {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 1em 3em;
+      border: 1px solid #464646;
+      overflow: hidden;
+      margin: 0 auto;
+      -webkit-transition: all ease-out 400ms;
+      -o-transition: all ease-out 400ms;
+      transition: all ease-out 400ms; }
+      .portfolio .portfolio--view-more a:hover {
+        border: 1px solid #464646;
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }

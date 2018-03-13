@@ -1,0 +1,30 @@
+button {
+    color: $primary-color;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: .5em 0;
+    margin: 0 1.5em;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom ease-in-out 500ms;
+    cursor: pointer;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &.active {
+        border-bottom: 2px solid $primary-color;
+    }
+
+    &:hover, 
+    &:focus {
+        border-bottom: 2px solid $primary-color;
+    }
+
+}
+

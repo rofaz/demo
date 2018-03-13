@@ -1,0 +1,77 @@
+.info {
+    background:rgba(0, 0, 0, 0) url('../../img/bg3.jpg') repeat scroll right center / cover;
+    .info--text {
+        padding: 7em 0;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $secondary-color;
+        font-weight: 600;
+        z-index: 9;
+        span {
+            display: block;
+            font-size: .7em;
+            text-transform: none;
+            letter-spacing: 1px;
+            font-weight: 200;
+        }
+    }
+}
+
+.portfolio {
+    padding: 5em 0;
+
+
+    .portfolio--menu {
+        margin-bottom: 2.5em;
+    }
+
+    .portfolio--items {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 2em;
+        justify-items: center;
+        margin-bottom: 3em;
+        .portfolio--items--item {
+            cursor: pointer;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+            transition: box-shadow ease-out 400ms;
+            .title {
+                letter-spacing: 2px;
+                font-size: 1.3em;
+                padding: .5em 1em 1em 1em;
+                text-transform: uppercase;
+                span {
+                    display: block;
+                    text-transform: none;
+                    font-size: .9em;
+                    letter-spacing: 1px;
+                }
+            }
+            &:hover {
+                box-shadow: 0 5px 25px rgba(0, 0, 0, .3);
+            }
+        }
+    }
+
+    .portfolio--view-more {
+        display: flex;
+        
+        a {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 1em 3em;
+            border: 1px solid $primary-color;
+            overflow: hidden;
+            margin: 0 auto;
+            transition: all ease-out 400ms;
+            &:hover {
+                border: 1px solid $primary-color;
+                box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+            }
+        }
+    }
+}
