@@ -25,6 +25,8 @@ button {
     &:focus {
         border-bottom: 2px solid $primary-color;
     }
-
+    @media(max-width: 500px) {
+        margin: 0 .5em;
+    }
 }
 
